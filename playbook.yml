@@ -3,7 +3,8 @@
 ##################################################
 ---
 - hosts: all
-  become: true
+  #become: true
+  sudo: yes
   vars_files:
     - vars/default.yml
 
