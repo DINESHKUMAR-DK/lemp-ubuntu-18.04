@@ -3,8 +3,8 @@
 ##################################################
 ---
 - hosts: all
-  become: yes
-  become_user: tkg
+  #become: yes
+  #become_user: tkg
   #become_method: su
   vars_files:
     - vars/default.yml
