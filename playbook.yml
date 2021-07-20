@@ -4,7 +4,7 @@
 ---
 - hosts: all
   become: yes
-  become_method: su
+  #become_method: su
   vars_files:
     - vars/default.yml
 
