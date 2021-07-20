@@ -18,6 +18,7 @@
         name: aptitude
     - name: Install LEMP Packages
       #apt: name={{ item }} update_cache=yes state=latest
+      become: yes
       apt: update_cache=yes
       loop: [ 'nginx', 'mysql-server', 'python3-pymysql', 'php-fpm', 'php-mysql' ]
     
